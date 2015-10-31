@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+  <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="60dp"
+    android:paddingBottom="30dp"
+    android:background="#ffdfeaf1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+      android:text="@string/app_portfolio_title"
+      android:id="@+id/title"
+      style="@style/MyTitle"/>
+
+    <Button
+      android:text="@string/media_streamer_app"
+      android:id="@+id/media_streamer_button"
+      android:layout_below="@+id/title"
+      android:layout_marginTop="20dp"
+      android:paddingTop="5dp"
+      android:onClick="mediaStreamerToast"
+      style="@style/Button"/>
+
+    <Button
+      android:text="@string/scores_app"
+      android:id="@+id/scores_app_button"
+      android:layout_below="@+id/media_streamer_button"
+      android:paddingTop="5dp"
+      android:onClick="scoresToast"
+      style="@style/Button"/>
+
+    <Button
+      android:text="@string/library_app"
+      android:id="@+id/library_app_button"
+      android:layout_below="@+id/scores_app_button"
+      android:onClick="libraryToast"
+      style="@style/Button"/>
+
+    <Button
+      android:text="@string/build_it_bigger"
+      android:id="@+id/build_it_bigger_button"
+      android:layout_below="@+id/library_app_button"
+      android:onClick="buildItBiggerToast"
+      style="@style/Button"/>
+
+    <Button
+      android:text="@string/xyz_reader"
+      android:id="@+id/xyz_reader_button"
+      android:layout_below="@+id/build_it_bigger_button"
+      android:onClick="xyzReaderToast"
+      style="@style/Button"/>
+
+    <Button
+      android:text="@string/capstone"
+      android:id="@+id/capstone"
+      android:layout_below="@+id/xyz_reader_button"
+      android:onClick="capstoneToast"
+      style="@style/Button.Capstone"/>
+
+  </RelativeLayout>
+
+</ScrollView>
